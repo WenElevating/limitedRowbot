@@ -1,0 +1,17 @@
+{
+  "name": "windows-desktop-robot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Windows Desktop AI Agent Platform",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "cli": "node apps/cli/dist/index.js",
+    "clean": "pnpm -r clean"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

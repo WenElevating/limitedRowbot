@@ -1,0 +1,38 @@
+{
+  "name": "@robot/cli",
+  "version": "0.1.0",
+  "description": "CLI application for Windows Desktop Robot",
+  "type": "module",
+  "bin": {
+    "rowbot": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "clean": "rimraf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@robot/agent-core": "workspace:*",
+    "@robot/browser-adapter": "workspace:*",
+    "@robot/cli-ui": "workspace:*",
+    "@robot/execution-engine": "workspace:*",
+    "@robot/intent-router": "workspace:*",
+    "@robot/logger": "workspace:*",
+    "@robot/llm-adapter": "workspace:*",
+    "@robot/permission-system": "workspace:*",
+    "@robot/tool-system": "workspace:*",
+    "@robot/windows-adapter": "workspace:*",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.1",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "rimraf": "^5.0.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
