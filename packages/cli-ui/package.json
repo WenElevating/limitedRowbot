@@ -13,7 +13,8 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "clean": "rimraf dist *.tsbuildinfo"
+    "clean": "rimraf dist *.tsbuildinfo",
+    "test": "vitest run"
   },
   "dependencies": {
     "ansi-escapes": "^6.2.1",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@types/node": "^20.11.0",
     "rimraf": "^5.0.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^1.6.1"
   }
 }

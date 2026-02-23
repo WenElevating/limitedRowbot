@@ -14,8 +14,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "clean": "rimraf dist *.tsbuildinfo",
-    "lint": "eslint src --ext .ts",
-    "test": "vitest run"
+    "lint": "eslint src --ext .ts"
   },
   "dependencies": {
     "sql.js": "^1.10.3"
@@ -24,7 +23,6 @@
     "@types/node": "^20.11.0",
     "@types/sql.js": "^1.4.9",
     "rimraf": "^5.0.5",
-    "typescript": "^5.3.3",
-    "vitest": "^1.2.0"
+    "typescript": "^5.3.3"
   }
 }

@@ -70,6 +70,18 @@
 
 ### 文档
 - 2026-02-22 | README.md | Create | 添加项目说明文档，包含安装、使用、配置、架构等完整说明
+- 2026-02-23 | 生产级别评估报告 | Create | 添加 PRODUCTION_READINESS_ASSESSMENT.md，评估项目生产就绪度并列出改进计划
+
+### 测试
+- 2026-02-23 | 测试体系 | Create | 为核心模块添加单元测试
+  - llm-adapter: openai-provider.test.ts, glm-provider.test.ts
+  - permission-system: enhanced-permission-guard.test.ts
+  - cli-ui: state.test.ts
+  - tool-system: rate-limiter.test.ts, tool-validator.test.ts
+  - intent-router: router.test.ts
+  - 新增 vitest.config.ts 配置文件
+  - 测试覆盖: LLM Provider, 权限系统, UI 状态管理, 速率限制, 工具验证, 意图路由
+- 2026-02-23 | 测试报告 | Create | 生成 TEST_REPORT.md，记录 179 个测试用例全部通过
 
 ---
 

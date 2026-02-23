@@ -39,3 +39,6 @@ coverage/
 # Temp
 tmp/
 temp/
+
+# .trae
+.trae/
